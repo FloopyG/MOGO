@@ -22,7 +22,6 @@
     src: url("fonts/roboto-regular.ttf");
     font-family: roboto-regular;
 }
-
 /*
 
 Header content
@@ -50,6 +49,7 @@ header {
     font-family: montserrat-bold, sans-serif;
     font-size: 30px;
     color: white;
+    text-decoration: none;
 }
 
 .top-menu {
@@ -59,6 +59,7 @@ header {
 .top-menu_li {
     display: inline-block;
     margin-right: 60px;
+    transition: 0.2s;
 }
 
 .top-menu_li:last-child {
@@ -74,6 +75,7 @@ header {
     font-size: 14px;
     font-family: montserrat-regular, sans-serif;
     color: white;
+    transition: 0.2s;
 }
 
 .top-menu_a:hover {
@@ -553,7 +555,7 @@ JS BOX1 END // BOX 6 START
 }
 
 .js_box2 {
-    width: 1150px;
+    max-width: 1150px;
     margin: auto;
     padding: 0 90px;
 }
@@ -564,8 +566,8 @@ JS BOX1 END // BOX 6 START
 }
 
 .js2_slide_text {
-    float: right;
-    width: 770px;
+    margin-left: 180px;
+    max-width: 770px;
     height: 150px;
 }
 
@@ -1154,6 +1156,10 @@ MEDIA
 */
 
 @media screen and (max-width: 1200px) {
+
+    .box4{
+        display: none;
+    }
     .box13-block1 {
         float: none;
         margin: auto;
@@ -1237,4 +1243,47 @@ MEDIA
         float: none;
         margin: 17px auto;
     }
+}
+@media screen and (max-width: 780px){
+    .js_redline{
+        display: none;
+    }
+    .js2_slide_text1{
+        font-size: 14px;
+    }
+    .js2_slide_text2{
+        font-size: 14px;
+    }
+    .main-text2{
+        font-size: 70px;
+    }
+    .drop-menu{
+        max-width: 120px;
+        transition: 0.2s;
+    }
+    .top-menu{
+        float: none;
+        position: absolute;
+        opacity: 0;
+        left: 10px;
+        transition: 0.2s;
+    }
+    .top-menu_li{
+        display: block;
+        margin-top: 25px;
+    }
+    .logo_small{
+        float: none;
+        margin-left: 20px;
+        transition: 0.2s;
+    }
+    .logo_small:hover{
+        transition: 0.2s linear;
+        color: #fce38a;
+    }
+    .drop-menu:hover .top-menu{
+        opacity: 1;
+        transition: 0.2s;
+    }
+
 }
